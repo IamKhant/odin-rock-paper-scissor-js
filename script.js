@@ -30,15 +30,17 @@ function playGame() {
     if (humanChoice === computerChoice) {
       console.log("It's a tie!");
       console.log("Both players chose " + humanChoice + ". Human current score: " + humanScore + ", Computer current score: " + computerScore);
+      alert("It's a tie! Both players chose " + humanChoice + ". Human current score: " + humanScore + ", Computer current score: " + computerScore);
     } else if (
       (humanChoice === "rock" && computerChoice === "scissor") || (humanChoice === "paper" && computerChoice === "rock") || (humanChoice === "scissor" && computerChoice === "paper")
     ) {
       humanScore++;
       console.log("Human wins!" + humanChoice + " beats " + computerChoice + ". Human current score: " + humanScore + ", Computer current score: " + computerScore);
+      alert("Human wins!" + humanChoice + " beats " + computerChoice + ". Human current score: " + humanScore + ", Computer current score: " + computerScore);
     } else {
-
       computerScore++;
       console.log("Computer wins! " + computerChoice + " beats " + humanChoice + ". Computer current score: " + computerScore + ", Human current score: " + humanScore);
+      alert("Computer wins! " + computerChoice + " beats " + humanChoice + ". Computer current score: " + computerScore + ", Human current score: " + humanScore);
     }
   }
 
@@ -53,10 +55,13 @@ function playGame() {
   console.log("That's it.");
   if (humanScore > computerScore) {
     console.log("Congratulations! You win the game with a score of " + humanScore + " to " + computerScore);
+    alert("Congratulations! You win the game with a score of " + humanScore + " to " + computerScore);
   } else if (computerScore > humanScore) {
     console.log("Sorry, you lose the game with a score of " + humanScore + " to " + computerScore);
+    alert("Sorry, you lose the game with a score of " + humanScore + " to " + computerScore);
   } else {
     console.log("It's a tie game with a score of " + humanScore + " to " + computerScore);
+    alert("It's a tie game with a score of " + humanScore + " to " + computerScore);
   }
 }
 playGame();
