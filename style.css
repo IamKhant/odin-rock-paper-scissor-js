@@ -1,0 +1,14 @@
+#results{
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+
+#score{
+  margin-top: 20px;
+  font-size: 1.2em;
+}
+button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+}
